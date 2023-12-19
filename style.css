@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    cursor: none; /* Hide the default cursor */
+}
+
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #00f;
+    border-radius: 50%;
+    mix-blend-mode: multiply; /* Blend mode for the liquid effect */
+    pointer-events: none; /* Allow the cursor to pass through elements */
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    font-size: 2em;
+}
